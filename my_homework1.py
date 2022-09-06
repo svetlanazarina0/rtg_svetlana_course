@@ -14,3 +14,5 @@ print(10**100)
 print(1000*1.06**12)
 #A = P(1 + R/100) power t - compound interest formula
 #2012.1964718355514
+
+#trying:)
