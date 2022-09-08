@@ -19,6 +19,7 @@ age= input(print(f"How old are you, {username}?"))
 current_year=date.today().year
 # print(current_year)
 age=int(age)
-display_year=current_year+100-age
+target_age=100
+display_year=current_year+target_age-age
 # print(display_year)
-print(f"You will be 100 years old in year {display_year}")
+print(f"You will be {target_age} years old in year {display_year}")
