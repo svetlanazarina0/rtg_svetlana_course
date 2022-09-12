@@ -14,7 +14,7 @@ print(user_temperature)
 
 if user_temperature<35:
     print("not too cold")
-elif 35>= user_temperature <=37:
+elif user_temperature <=37:
     print("all right")
 elif user_temperature>37:
     print("possible fever")
@@ -42,4 +42,6 @@ bonus_perc = 0.15
 if years < 2:
     print("No bonus yet")
 else:
-    print("Your bonus is " + str(salary * bonus_perc * math.floor((years-2))))
+    salary * bonus_perc * math.floor((years-2))
+    earned_bonus= salary * bonus_perc * math.floor((years-2))
+    print("Your bonus is ", earned_bonus)
