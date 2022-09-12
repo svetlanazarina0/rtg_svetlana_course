@@ -7,7 +7,6 @@ try:
     float(user_temperature)
 except ValueError:
     print("Please enter valid number. Decimals should be seperated with .")
-  
 
 user_temperature= float(user_temperature)
 type(user_temperature)
@@ -35,10 +34,12 @@ else :
 # Example1: 5 years of experience, 1000 Euro salary, the bonus will be 450 Euro.
 # Example2: 1.5 years of experience, 1500 Euro salary, no bonus(0)
 
+import math 
+
 salary = float(input("What is your montly salary? "))
 years = float(input("Please enter number of years you have worked "))
 bonus_perc = 0.15
 if years < 2:
     print("No bonus yet")
 else:
-    print("Your bonus is " + str(salary * bonus_perc * (years-2)))
+    print("Your bonus is " + str(salary * bonus_perc * math.floor((years-2))))
