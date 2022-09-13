@@ -15,13 +15,13 @@ for i in range(1,101):
     print(i)
     if i % 5 == 0 and i % 7 == 0:
         string = string + "FizzBuzz" + ","
-    if i % 5 == 0:
+    elif i % 5 == 0:
         string = string + "Fizz" +","
-        print(string)
-    if i % 7 == 0:
+      #  print(string)
+    elif i % 7 == 0:
         string = string + "Buzz" +","
    
-    if i % 5 != 0 and i % 7 != 0:
+    elif i % 5 != 0 and i % 7 != 0:
         string = string + str(i)+","
 
         print(string)
@@ -68,6 +68,4 @@ if prime==False:
     print(f"{n} is not a prime number")
 else:  
     print(f"{n} is a prime number")
-
-
 
