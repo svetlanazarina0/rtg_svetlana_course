@@ -46,7 +46,7 @@ for i in range(1,tree_height+1):
     if i==1 : 
         print(" " * (tree_height-1) +  "*" * i)
     if i>1:
-        start=start+2
+        stars=stars+2
         print(" " * (tree_height-i) +  "*" * stars)
  
 
