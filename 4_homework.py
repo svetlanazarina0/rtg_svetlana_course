@@ -58,11 +58,16 @@ for i in range(1,tree_height+1):
 # Hint: what numbers do we have to check?
 
 n=int(input("Please enter positive number"))
-
+prime=True
 for i in range(2,1000):
     if (n%i) == 0 and i !=n:
-        print("not a prime")
-    break
+        prime=False
+        break
+
+if prime==False:
+    print(f"{n} is not a prime number")
+else:  
+    print(f"{n} is a prime number")
 
 
 
