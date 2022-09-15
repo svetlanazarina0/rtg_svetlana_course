@@ -42,7 +42,6 @@ print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 # https://en.wikipedia.org/wiki/Hangman_(game)
 
 text=input("First player, please enter a text")
-#text="Akuna      mama jaj"
 
 space = " "
 asterisk="*"
@@ -54,12 +53,14 @@ for i in range(0,len(text)):
     else: 
         new_text=new_text+ asterisk  
 
+
 while new_text.find('*')>0:
     letter=input("Second player, please enter a letter")
    # letter="a"
     for i in range(0,len(text)):
         if text[i] == letter:
            new_text=new_text[:i]+letter+new_text[i+1:]
+
 print(new_text)
  
 
