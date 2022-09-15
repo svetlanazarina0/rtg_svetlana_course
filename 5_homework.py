@@ -41,7 +41,7 @@ print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 # In principle, this is a good start to the game of hangman.
 # https://en.wikipedia.org/wiki/Hangman_(game)
 
-#text=input("First player, please enter a text")
+text=input("First player, please enter a text")
 
 space = " "
 asterisk="*"
