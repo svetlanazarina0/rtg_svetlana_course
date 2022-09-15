@@ -15,6 +15,7 @@ print(name[:])
 from dataclasses import replace
 from gettext import find
 from hashlib import new
+from itertools import count
 import string
 
 name=str.lower(input("Please enter your name"))
@@ -58,14 +59,15 @@ for i in range(0,len(text)):
     else: 
         new_text=new_text+ asterisk  
 
-letter=input("Second player, please enter a letter")
-letter="a"
-print(text.find(letter))
-
-
-for i in range(0,len(text)):
-    if text[i] == letter:
-        new_text=new_text[:i]+letter+new_text[i+1:]
-  
-
+while new_text.find('*')>0:
+    letter=input("Second player, please enter a letter")
+   # letter="a"
+    for i in range(0,len(text)):
+        if text[i] == letter:
+           new_text=new_text[:i]+letter+new_text[i+1:]
 print(new_text)
+ 
+
+
+
+
