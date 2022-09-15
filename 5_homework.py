@@ -12,7 +12,7 @@ print(name[:])
 # Example:
 
 # Enter: Valdis -> Output: Sidlav, a thorough mess is it not V?
-
+#without built in
 name=str.lower(input("Please enter your name"))
 new_name=""
 for i in range(1,len(name)+1):
