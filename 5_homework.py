@@ -1,6 +1,3 @@
-name="Svetlana"
-
-print(name[:])
 
 
 
@@ -13,6 +10,10 @@ print(name[:])
 
 # Enter: Valdis -> Output: Sidlav, a thorough mess is it not V?
 #without built in
+
+
+
+
 name=str.lower(input("Please enter your name"))
 new_name=""
 for i in range(1,len(name)+1):
@@ -22,7 +23,6 @@ for i in range(1,len(name)+1):
 name_formatted= str.upper(new_name[0])+str.lower(new_name[1:])
 first_letter=str.upper(name[0])
 print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
-
 
 
 
@@ -41,8 +41,8 @@ print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 # In principle, this is a good start to the game of hangman.
 # https://en.wikipedia.org/wiki/Hangman_(game)
 
-text=input("First player, please enter a text")
-
+#text=input("First player, please enter a text")
+text="kakakafs svdns "
 space = " "
 asterisk="*"
 new_text=""
@@ -53,6 +53,7 @@ for i in range(0,len(text)):
     else: 
         new_text=new_text+ asterisk  
 
+print(new_text)
 
 while new_text.find('*')>0:
     letter=input("Second player, please enter a letter")
@@ -61,6 +62,7 @@ while new_text.find('*')>0:
         if text[i] == letter:
            new_text=new_text[:i]+letter+new_text[i+1:]
 
+#NOT WORKING
 print(new_text)
  
 
