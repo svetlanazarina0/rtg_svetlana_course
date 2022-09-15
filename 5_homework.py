@@ -12,11 +12,6 @@ print(name[:])
 # Example:
 
 # Enter: Valdis -> Output: Sidlav, a thorough mess is it not V?
-from dataclasses import replace
-from gettext import find
-from hashlib import new
-from itertools import count
-import string
 
 name=str.lower(input("Please enter your name"))
 new_name=""
@@ -47,7 +42,7 @@ print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 # https://en.wikipedia.org/wiki/Hangman_(game)
 
 text=input("First player, please enter a text")
-text="Akuna      mama jaj"
+#text="Akuna      mama jaj"
 
 space = " "
 asterisk="*"
