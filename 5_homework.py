@@ -42,7 +42,7 @@ print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 # https://en.wikipedia.org/wiki/Hangman_(game)
 
 #text=input("First player, please enter a text")
-text="kakakafs svdns "
+
 space = " "
 asterisk="*"
 new_text=""
