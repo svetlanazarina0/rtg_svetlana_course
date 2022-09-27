@@ -4,11 +4,10 @@
 # get_min_avg_max ([0,10,1,9]) -> (0,5,10)
 # the incoming sequence can be a tuple or a list with numeric values.
 import statistics
-my_nums = [int(t) for t in input("Enter values separated by whitespace").split(" ")]
-#print(my_nums, min(my_nums), statistics.mean(my_nums), max(my_nums))
-values= min(my_nums), statistics.mean(my_nums), max(my_nums)
-tuple_values=tuple(values)
-print(tuple_values)
+values  = [int(t) for t in input("Enter values separated by whitespace").split(" ")]
+#print(values, min(values), statistics.mean(values), max(values))
+values=tuple(min(values), statistics.mean(values), max(values))
+print(values)
 #not a function..
 
 # Write a function that returns a tuple with common elements in three sequences. Inputs can be list, tuple, string.
@@ -24,7 +23,7 @@ print(tuple_values)
 
 def get_common_elements(s1,s2,s3):
      return tuple(set(s1).intersection(set(s2).intersection(set(s3))))
-     
+
  x, y, z = input("Enter three sequences, seperated by a whitespace: ").split()
 get_common_elements(x,y,z)
 
