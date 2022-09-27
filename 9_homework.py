@@ -26,4 +26,16 @@ def get_common_elements(s1,s2,s3):
 
  x, y, z = input("Enter three sequences, seperated by a whitespace: ").split()
 get_common_elements(x,y,z)
+# 3. Is there a pangram?
+# Write a function is_pangram(text, alphabet='abcdefghijklmnopqrstuvwxyz')
+# that returns True when the text parameter contains all the letters passed in an alphabet.
+# We return False otherwise
+# pangram - sentence, word string containing all letters of the alphabet - https://en.wikipedia.org/wiki/Pangram
+# We ignore spaces and believe that uppercase is as valid as lowercase, i. here A and a -> a
+# print(is_pangram("The five boxing wizards jump quickly")) -> True
+# print(is_pangram("Not a pangram")) -> False
 
+def is_pangram(text, alphabet='abcdefghijklmnopqrstuvwxyz'):
+        return set(alphabet).intersection(set(text)) == set(text)
+
+print(is_pangram("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", alphabet='abcdefghijklmnopqrstuvwxyz'))
