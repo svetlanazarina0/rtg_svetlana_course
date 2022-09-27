@@ -35,7 +35,8 @@ get_common_elements(x,y,z)
 # print(is_pangram("The five boxing wizards jump quickly")) -> True
 # print(is_pangram("Not a pangram")) -> False
 
-def is_pangram(text, alphabet):
-        return set(alphabet).intersection(set(text)) == set(alphabet)
+# def is_pangram(text, alphabet):
+#         return set(alphabet).intersection(set(text)) #== set(alphabet)
 
-print(is_pangram("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",'abcdefghijklmnopqrstuvwxyz'))
+
+# print(is_pangram("The five boxing wizards jump quicklyyy",'abcdefghijklmnopqrstuvwxyz'))
