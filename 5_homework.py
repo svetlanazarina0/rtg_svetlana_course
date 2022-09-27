@@ -14,15 +14,15 @@
 
 
 
-name=str.lower(input("Please enter your name"))
-new_name=""
-for i in range(1,len(name)+1):
-    new_name=new_name+name[-i]
-    print(name[-i])
+# name=str.lower(input("Please enter your name"))
+# new_name=""
+# for i in range(1,len(name)+1):
+#     new_name=new_name+name[-i]
+#     print(name[-i])
 
-name_formatted= str.upper(new_name[0])+str.lower(new_name[1:])
-first_letter=str.upper(name[0])
-print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
+# name_formatted= str.upper(new_name[0])+str.lower(new_name[1:])
+# first_letter=str.upper(name[0])
+# print(f"{name_formatted}, a thorough mess is it not, {first_letter} ?")
 
 
 
