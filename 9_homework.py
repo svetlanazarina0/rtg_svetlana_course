@@ -34,8 +34,8 @@ get_common_elements(x,y,z)
 # We ignore spaces and believe that uppercase is as valid as lowercase, i. here A and a -> a
 # print(is_pangram("The five boxing wizards jump quickly")) -> True
 # print(is_pangram("Not a pangram")) -> False
-
+import string
 def is_pangram(text, alphabet="abcdefghijklmnopqrstuvwxyz"):
-        return set(alphabet).issubset(set(text))
+        return set(alphabet).issubset(set(lower(text))
 
 print(is_pangram("the five boxing wizards jump quickly"))
